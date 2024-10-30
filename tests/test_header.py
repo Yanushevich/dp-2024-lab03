@@ -1,14 +1,16 @@
 import unittest
-from decorator import message_decorator
+
+import decorators.header_decorator
+import interfaces.message
 
 
 class TestHeader(unittest.TestCase):
     def setUp(self):
         self.header = "Header"
-        self.message = message_decorator.Message("Test message")
+        self.message = interfaces.message.Message("Test message")
         self.message_with_header = "Header\nTest message"
-        self.message_with_header_decorator = message_decorator.HeaderDecorator(
-            self.header, self.message
+        self.message_with_header_decorator = (
+            decorators.header_decorator.HeaderDecorator(self.header, self.message)
         )
 
     def test_header(self):

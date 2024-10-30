@@ -1,16 +1,18 @@
 import unittest
 import datetime
-from decorator import message_decorator
+
+import decorators.date_decorator
+import interfaces.message
 
 
 class TestDate(unittest.TestCase):
     def setUp(self):
-        self.message = message_decorator.Message("Test message")
+        self.message = interfaces.message.Message("Test message")
         self.date = datetime.date.today()
         self.message_with_date = (
             f"Test message\n{datetime.date.today().strftime('%d.%m.%Y')}"
         )
-        self.message_with_date_decorator = message_decorator.DateDecorator(
+        self.message_with_date_decorator = decorators.date_decorator.DateDecorator(
             self.date, self.message
         )
 

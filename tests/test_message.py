@@ -1,11 +1,12 @@
 import unittest
-from decorator import message_decorator
+
+import interfaces.message
 
 
 class TestMessage(unittest.TestCase):
     def setUp(self):
         self.message = "Test message"
-        self.message_decorator = message_decorator.Message(self.message)
+        self.message_decorator = interfaces.message.Message(self.message)
 
     def test_creating_message(self):
         """Сравнение содержимого сообщений"""
