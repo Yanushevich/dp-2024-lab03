@@ -57,3 +57,6 @@ IMessage msgWithHeaderFooterDateInBase64 = /*тут создаётся деко�
 msgWithHeaderFooterDateInBase64.Print();            // на экран будет выведено: 
                                                     // 0JTQvtCx0YDRi9C5INC00LXQvdGMLA0K0KEg0L3QsNGB0YLRg9C/0LDRjtGJ0LjQvCDQndC+0LLRi9C8INCz0L7QtNC+0LwhDQrQlNC10LQg0JzQvtGA0L7Qtw0KMjYuMTIuMjAyMA==
 ```
+
+### UML-диаграмма предлагаемого решения
+![decorator_uml](https://github.com/user-attachments/assets/b22c0601-fe24-4116-aea6-6a9a00d90d0d)
