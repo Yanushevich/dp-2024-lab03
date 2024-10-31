@@ -5,7 +5,12 @@ class MessageDecorator(Message):
     """Базовый декоратор"""
 
     def __init__(self, message: Message):
-        """Инициализация декоратора"""
+        """
+        Инициализация декоратора
+
+        Args:
+            message (Message): Объект сообщения
+        """
         super().__init__(message._get_content())
         self._message = message
 

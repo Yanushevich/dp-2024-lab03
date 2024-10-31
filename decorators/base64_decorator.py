@@ -8,7 +8,12 @@ class Base64Decorator(MessageDecorator):
     """Декоратор кодирования сообщения в Base64"""
 
     def __init__(self, message: Message):
-        """Инициализация декоратора"""
+        """
+        Инициализация декоратора
+
+        Args:
+            message (Message): Объект сообщения
+        """
         super().__init__(message)
         self._message = message
         self._base64 = self._get_base64()

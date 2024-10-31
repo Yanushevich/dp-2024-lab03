@@ -6,7 +6,13 @@ class HeaderDecorator(MessageDecorator):
     """Декоратор добавления заголовка в начало сообщения"""
 
     def __init__(self, header: str, message: Message):
-        """Инициализация декоратора"""
+        """
+        Инициализация декоратора
+
+        Args:
+            header (str): Заголовок
+            message (Message): Объект сообщения
+        """
         super().__init__(message)
         self._message = message
         self._header = header

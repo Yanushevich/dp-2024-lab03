@@ -2,7 +2,12 @@ class Message:
     """Интерфейс базового сообщения"""
 
     def __init__(self, message: str):
-        """Инициализация сообщения"""
+        """
+        Инициализация сообщения
+
+        Args:
+            message (str): Сообщение
+        """
         self._message = message
 
     def _get_content(self) -> str:

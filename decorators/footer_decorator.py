@@ -6,7 +6,13 @@ class FooterDecorator(MessageDecorator):
     """Декоратор добавления подписи в конец сообщения"""
 
     def __init__(self, footer: str, message: Message):
-        """Инициализация декоратора"""
+        """
+        Инициализация декоратора
+
+        Args:
+            footer (str): Подпись
+            message (Message): Объект сообщения
+        """
         super().__init__(message)
         self._message = message
         self._footer = footer
