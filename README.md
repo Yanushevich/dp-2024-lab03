@@ -59,4 +59,4 @@ msgWithHeaderFooterDateInBase64.Print();            // на экран буде�
 ```
 
 ### UML-диаграмма предлагаемого решения
-![decorator_uml](https://github.com/user-attachments/assets/b22c0601-fe24-4116-aea6-6a9a00d90d0d)
+![decorator_uml](https://github.com/user-attachments/assets/6658c03a-7b0b-4a56-b3bb-10ed2ce2e305)
