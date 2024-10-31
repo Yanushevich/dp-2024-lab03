@@ -6,7 +6,10 @@ import interfaces.message
 
 
 class TestDate(unittest.TestCase):
+    """Проверка добавления даты"""
+
     def setUp(self):
+        """Первоначальные значения"""
         self.message = interfaces.message.Message("Test message")
         self.date = datetime.date.today()
         self.message_with_date = (

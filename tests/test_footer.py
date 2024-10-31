@@ -5,7 +5,10 @@ import interfaces.message
 
 
 class TestFooter(unittest.TestCase):
+    """Проверка добавления подписи"""
+
     def setUp(self):
+        """Первоначальные значения"""
         self.message = interfaces.message.Message("Test message")
         self.footer = "Footer"
         self.message_with_footer = "Test message\nFooter"

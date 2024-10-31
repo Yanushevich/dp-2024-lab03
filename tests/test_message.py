@@ -4,7 +4,10 @@ import interfaces.message
 
 
 class TestMessage(unittest.TestCase):
+    """Проверка создания сообщения"""
+
     def setUp(self):
+        """Первоначальные значения"""
         self.message = "Test message"
         self.message_decorator = interfaces.message.Message(self.message)
 

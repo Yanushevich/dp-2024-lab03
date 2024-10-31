@@ -5,9 +5,8 @@ name: Лабораторная работа №3
 
 on:
   push:
-    branches: [main, feature]
-  pull_request:
-    branches: [main, feature]
+    branches: [feature]
+
 
 jobs:
   build:

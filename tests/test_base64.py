@@ -5,8 +5,11 @@ import decorators.base64_decorator
 import interfaces.message
 
 
-class TestDate(unittest.TestCase):
+class TestBase64(unittest.TestCase):
+    """Проверка кодирования в Base64"""
+
     def setUp(self):
+        """Первоначальные значения"""
         self.message = interfaces.message.Message("Test message")
         self.message_with_base64 = base64.b64encode(
             "Test message".encode("utf-8")

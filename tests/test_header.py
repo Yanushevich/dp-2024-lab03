@@ -5,7 +5,10 @@ import interfaces.message
 
 
 class TestHeader(unittest.TestCase):
+    """Проверка добавления заголовка"""
+
     def setUp(self):
+        """Первоначальные значения"""
         self.header = "Header"
         self.message = interfaces.message.Message("Test message")
         self.message_with_header = "Header\nTest message"
