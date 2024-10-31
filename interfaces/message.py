@@ -5,10 +5,10 @@ class Message:
         """Инициализация сообщения"""
         self._message = message
 
-    def get_message(self):
-        """Возвращает значение"""
+    def _get_content(self):
+        """Возвращает значение объекта"""
         return self._message
 
     def print(self) -> None:
         """Вывод сообщения в консоль"""
-        print(self.get_message())
+        print(self._get_content())

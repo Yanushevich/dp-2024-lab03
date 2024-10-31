@@ -19,7 +19,7 @@ class TestHeader(unittest.TestCase):
     def test_header(self):
         """Сравнение содержимого сообщений"""
         self.assertEqual(
-            self.message_with_header, self.message_with_header_decorator.get_message()
+            self.message_with_header, self.message_with_header_decorator._get_content()
         )
 
 

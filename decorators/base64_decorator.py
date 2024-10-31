@@ -13,12 +13,12 @@ class Base64Decorator(MessageDecorator):
         self._message = message
         self._base64 = self._get_base64()
 
-    def get_message(self):
+    def _get_content(self):
         """Возвращает сообщение"""
         return self._base64
 
     def _get_base64(self):
         """Кодирование в Base64"""
-        return base64.b64encode(self._message.get_message().encode("utf-8")).decode(
+        return base64.b64encode(self._message._get_content().encode("utf-8")).decode(
             "utf-8"
         )

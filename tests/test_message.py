@@ -13,7 +13,7 @@ class TestMessage(unittest.TestCase):
 
     def test_creating_message(self):
         """Сравнение содержимого сообщений"""
-        self.assertEqual(self.message_decorator.get_message(), self.message)
+        self.assertEqual(self.message_decorator._get_content(), self.message)
 
 
 if __name__ == "__main__":

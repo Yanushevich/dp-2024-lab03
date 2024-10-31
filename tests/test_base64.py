@@ -21,7 +21,7 @@ class TestBase64(unittest.TestCase):
     def test_header(self):
         """Сравнение содержимого сообщений"""
         self.assertEqual(
-            self.message_with_base64, self.message_with_base64_decorator.get_message()
+            self.message_with_base64, self.message_with_base64_decorator._get_content()
         )
 
 

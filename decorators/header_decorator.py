@@ -11,6 +11,6 @@ class HeaderDecorator(MessageDecorator):
         self._message = message
         self._header = header
 
-    def get_message(self):
+    def _get_content(self):
         """Возвращает сообщение"""
-        return f"{self._header}\n{self._message.get_message()}"
+        return f"{self._header}\n{self._message._get_content()}"

@@ -22,7 +22,7 @@ class TestDate(unittest.TestCase):
     def test_header(self):
         """Сравнение содержимого сообщений"""
         self.assertEqual(
-            self.message_with_date, self.message_with_date_decorator.get_message()
+            self.message_with_date, self.message_with_date_decorator._get_content()
         )
 
 
