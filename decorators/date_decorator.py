@@ -16,6 +16,6 @@ class DateDecorator(MessageDecorator):
         """Приведение даты к формату"""
         return date.strftime("%d.%m.%Y")
 
-    def _get_content(self):
+    def _get_content(self) -> str:
         """Возвращает сообщение"""
         return f"{self._message._get_content()}\n{self._date}"

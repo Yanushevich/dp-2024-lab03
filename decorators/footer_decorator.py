@@ -11,6 +11,6 @@ class FooterDecorator(MessageDecorator):
         self._message = message
         self._footer = footer
 
-    def _get_content(self):
+    def _get_content(self) -> str:
         """Возвращает сообщение"""
         return f"{self._message._get_content()}\n{self._footer}"

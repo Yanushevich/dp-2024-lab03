@@ -9,6 +9,6 @@ class MessageDecorator(Message):
         super().__init__(message._get_content())
         self._message = message
 
-    def _get_content(self):
+    def _get_content(self) -> str:
         """Возвращает сообщение"""
         return self._message._get_content()

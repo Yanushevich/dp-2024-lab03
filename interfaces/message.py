@@ -5,7 +5,7 @@ class Message:
         """Инициализация сообщения"""
         self._message = message
 
-    def _get_content(self):
+    def _get_content(self) -> str:
         """Возвращает значение объекта"""
         return self._message
 
